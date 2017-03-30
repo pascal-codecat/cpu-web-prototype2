@@ -1,0 +1,86 @@
+
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+html{
+  font-size: 1rem;
+}
+.custom-navbar{
+  /*overflow: hidden;*/
+  position: fixed;
+  height: 1.5rem;
+  width: 100%;
+  background-color: #082939;
+  padding: 0;
+  margin-bottom: 3rem;
+  z-index: 0;
+}
+
+.custom-navbar h1{
+  /*background-color: blue;*/
+  position: absolute;
+  text-align: right;
+  margin: 0;
+  width: 50rem;
+  right: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+/*.custom-navbar h1::first-line{
+  color: #ddd;
+  font-size: 20rem;
+}*/
+
+.custom-navbar::after{
+  background: inherit;
+  top: 100%;
+  content: '';
+  display: block;
+  height: 7vw;
+  left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+  transform: skewY(1.8deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.component-section{
+  transform: skewY(1.8deg);
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+  height: 30rem;
+  z-index: -2;
+}
+
+.component-inside{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 98%;
+  width: 98%;
+  top: 50%;
+  left: 50%;
+}
+
+.component-inside img{
+  position: absolute;
+  transform: translate(-50%, -50%)
+             skewY(-1.8deg);
+  width: auto;
+  top: 50%;
+  left: 50%;
+  height: 110%;
+}
+
+.component-section img:last-child {
+  height: 50%;
+
+}
+
+.section1{
+  background-color: #eee;
+}
